@@ -1,0 +1,202 @@
+/*
+* Theme Name: HackerYou Starter Theme
+* Theme URI: http://hackeryou.com;
+* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Version: 1.0
+* Author: HackerYou
+* Author URI: http://hackeryou.com
+*/
+
+@import 'normalize';
+@import 'comments';
+/*
+====================================
+Default Styling
+====================================
+*/
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Bree Serif', serif;
+
+}
+
+// .container {
+// 	max-width: 1200px;
+// 	margin: 0 auto;
+// }
+
+.content {
+	float: left;
+	width: 90%;
+	margin-right: 5%;
+}
+
+.full {
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+nav li {
+	float: left;
+	font-size: 18px;
+	padding: 10px 20px;
+}
+
+nav a {
+	color: RGBA(220, 175, 68, 1);
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+nav a:hover {
+	border-bottom: 1px solid rgba(255,255,255,0.6);
+	box-shadow: inset 0 -5px 0 rgba(255,255,255,0.6);
+}
+
+.home .content {
+		width: 100vw;
+		height: 100vh;
+		background-size: cover;
+		background-position: center; 
+}
+
+.buffer {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(
+      rgba(14, 14, 82, 0.7), 
+      rgba(14, 14, 82,0.9)
+    );
+	background-size: cover;
+	background-position: center; 
+}
+
+.element {
+	text-align: center;
+	padding-top: 25vh;
+	font-size: 30px;
+	margin: 0;
+	color: RGBA(220, 175, 68, 1);
+}
+
+.about {
+	background: RGBA(220, 175, 68, 1);
+	color: rgba(14, 14, 82, 1);
+	font-size: 20px;
+	padding: 0;
+	span {
+		font-weight: bold;
+		font-size: 30px; 
+	}
+}
+
+.contact {
+	background:   rgba(14, 14, 82, 1);
+	color: RGBA(220, 175, 68, 1);
+	margin: 0;
+
+}
+
+.container p {
+	margin: 0;
+}
+
+.highlight {
+	text-decoration: none;
+	color: #0D0A54;
+	border-bottom: 1px solid rgba(255,255,255,0.6);
+	box-shadow: inset 0 -5px 0 rgba(255,255,255,0.6);
+	transition: all 0.3s;
+}
+
+.highlight:hover {
+	background: rgba(255,255,255,0.6);
+}
+
+.wrapper {
+	max-width: 850px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.logo {
+	width: 224px;
+	height: 119px;
+	margin: 10px auto;
+}
+
+input[type=submit] {
+    color: white;
+    background: none;
+    border: 2px solid white;
+    transition: all 0.3s;
+    }
+
+input[type=submit]:hover {
+	background: RGBA(220, 175, 68, 8);
+}   
+
+textarea {
+	width: 375px;
+}
+
+footer {
+	margin: 0;
+	clear: both;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+
+.social {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+	font-size: 25px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	transition: all 0.3s;
+	a {
+		color: RGBA(220, 175, 68, 1);
+	}
+}
+
+.social ul {
+	list-style: none;
+	padding-left: 5px;
+	margin: 0;
+}	
+
+.social li {
+	float: left;
+	margin-right: 15px;
+	color: RGBA(220, 175, 68, 1);
+}
+
+.form {
+	width: 50%;
+	float: left;
+	padding-bottom: 50px;
+}
+
+.twitter {
+	width: 50%;
+	float: left;
+}
+
+
+
+
+
