@@ -26,6 +26,7 @@
 
     <section class="contact clearfix">
       <div class="wrapper contacts">
+        <div class="title"><?php the_field('contacttitle'); ?></div>
         <div class="form"><?php the_field('contact'); ?></div>
         <div class="twitter"><?php the_field('twitter'); ?></div>
       </div>

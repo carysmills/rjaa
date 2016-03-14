@@ -2,6 +2,9 @@
 
     <div class="content pagemain">
       <nav>
+
+      <img class="logohead" src="<?php the_field('logohead'); ?>" alt="">
+
         <?php wp_nav_menu( array(
           'container' => false,
           'theme_location' => 'primary'
@@ -22,6 +25,24 @@
             <?php the_content(); ?>
 
           <?php endwhile; // end the loop?>
+
+
+          <?php if( have_rows('biostuff') ): ?>
+            <?php while( have_rows('biostuff') ): the_row(); 
+
+              $name = get_sub_field('name');
+              $biophoto = get_sub_field('biophoto');
+              $bio = get_sub_field('bio');
+              ?>
+                <div class="bio">
+                  <h3> <?php echo $name; ?></h3>
+                  <img src="<?php echo $biophoto; ?>" alt="">
+                  <p> <?php echo $bio; ?></p>
+                </div>
+
+            <?php endwhile; ?>
+          <?php endif; ?>
+
           <?php get_footer(); ?>
       </div>
     </div> <!-- /,content -->

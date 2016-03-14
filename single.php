@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-    <p>testtesttest</p>
-
 
 <div class="main">
   <div class="container">

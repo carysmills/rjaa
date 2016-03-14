@@ -274,3 +274,15 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+
+add_filter('show_admin_bar', '__return_false');
+
+function my_scripts_method() {
+	wp_enqueue_script(
+		'custom-script',
+		get_template_directory_uri() . '/js/scripts2.js',
+		array('jquery')
+	);
+}
+if(is_page( 'home' ) ) add_action('wp_enqueue_scripts', 'my_scripts_method');
