@@ -2,12 +2,15 @@
 	Template Name: News
 */ -->
 
+  <img class="logohead2" src="<?php the_field('logohead'); ?>" alt="">
+
+
 <?php  ?>
 <?php get_header(); ?>
 
-      <img class="logohead" src="<?php the_field('logohead'); ?>" alt="">
-
         <nav>
+        <img class="logohead" src="<?php the_field('logohead'); ?>" alt="">
+
           <?php wp_nav_menu( array(
             'container' => false,
             'theme_location' => 'primary'
@@ -15,7 +18,7 @@
         </nav> 
 
 <div class="main">
-  <div class="container">
+  <div class="container jobz">
 
     <div class="jobcontent">
 
@@ -40,3 +43,12 @@
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
+
+<div class="social2 clearfix" id="social">
+  <ul class="clearfix">
+    <li><a target="_blank" href="<?php the_field('fblink'); ?>"><i class="fa fa-facebook"></i></a></li>
+    <li><a target="_blank" href="<?php the_field('twitterlink'); ?>"><i class="fa fa-twitter"></i></a></li>
+    <li><a target="_blank" href="<?php the_field('linkedin'); ?>"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="<?php the_field('email'); ?>"><i class="fa fa-envelope"></i></a></li>
+  </ul>
+</div>

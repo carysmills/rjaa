@@ -18,5 +18,25 @@
 
 <body <?php body_class(); ?>>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <header>
 
+<a id="nav-toggle" href="#"><span></span></a>
+
+
+</header>
+
+  <div id="mobile" class="mobile">
+  <?php wp_nav_menu( array(
+    'container' => false,
+    'theme_location' => 'primary'
+  )); ?>
+</div>

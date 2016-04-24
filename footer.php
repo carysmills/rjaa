@@ -1,9 +1,3 @@
-<footer>
-  <div class="container">
-    <p>&copy; RJAA <?php echo date('Y'); ?></p>
-  </div>
-</footer>
-
 <script>
 /* Google Analytics! */
  var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID
@@ -13,5 +7,6 @@
 </script>
 
 <?php wp_footer(); ?>
+
 </body>
 </html>

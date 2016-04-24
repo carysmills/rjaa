@@ -36,7 +36,7 @@
 
   <!--   //wordpress this -->
 
-      <div class="social clearfix" id="social">
+      <div class="social home clearfix" id="social">
     <ul class="clearfix">
       <li><a target="_blank" href="<?php the_field('fblink'); ?>"><i class="fa fa-facebook"></i></a></li>
       <li><a target="_blank" href="<?php the_field('twitterlink'); ?>"><i class="fa fa-twitter"></i></a></li>
@@ -44,4 +44,4 @@
       <li><a href="<?php the_field('email'); ?>"><i class="fa fa-envelope"></i></a></li>
     </ul>
   </div>
-
+<!--  -->
