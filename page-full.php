@@ -4,6 +4,7 @@
 	Template Name: Full Page, No Sidebar
 */
 
+test
 get_header();  ?>
 
 <div class="main">

@@ -2,12 +2,18 @@
 	Template Name: Jobs
 */ -->
 
-  <img class="logohead2" src="<?php the_field('logohead'); ?>" alt="">
+<div class="jobsHeader" 
+        style="background: linear-gradient(
+      rgba(14, 14, 82, 0.7), 
+      rgba(14, 14, 82,0.9)
+    ),  url('<?php the_field('jobs_background'); ?>') no-repeat; background-size: cover;">
+
+  <img class="logohead2 filter" src="<?php the_field('logohead'); ?>" alt="">
 
 <?php  ?>
 <?php get_header(); ?>
         <nav>
-        <img class="logohead" src="<?php the_field('logohead'); ?>" alt="">
+        <img class="logohead filter" src="<?php the_field('logohead'); ?>" alt="">
 
           <?php wp_nav_menu( array(
             'container' => false,
@@ -15,15 +21,17 @@
           )); ?>
         </nav> 
 
-<div class="main">
+<h2 class="jobPosts wrapper"><?php the_title(); ?></h2>
+
+</div>        
+
+<div class="main wrapper">
   <div class="container">
 
     <div class="jobcontent">
 
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-      <h2 class="posts"><?php the_title(); ?></h2>
 
       <?php if ( has_post_thumbnail() ) : ?>
               <?php the_post_thumbnail( 'full' ); ?>
@@ -34,8 +42,6 @@
     <?php endwhile; // end the loop?>
     </div> <!--/.content -->
 
-
-<?php get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

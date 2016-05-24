@@ -2,14 +2,20 @@
 	Template Name: News
 */ -->
 
-  <img class="logohead2" src="<?php the_field('logohead'); ?>" alt="">
+<div class="updatesHeader" 
+        style="background: linear-gradient(
+      rgba(14, 14, 82, 0.7), 
+      rgba(14, 14, 82,0.9)
+    ),  url('<?php the_field('updates_background'); ?>') no-repeat; background-size: cover;">
+
+  <img class="logohead2 filter" src="<?php the_field('logohead'); ?>" alt="">
 
 
 <?php  ?>
 <?php get_header(); ?>
 
         <nav>
-        <img class="logohead" src="<?php the_field('logohead'); ?>" alt="">
+        <img class="logohead filter" src="<?php the_field('logohead'); ?>" alt="">
 
           <?php wp_nav_menu( array(
             'container' => false,
@@ -17,15 +23,16 @@
           )); ?>
         </nav> 
 
-<div class="main">
+      <h2 class="posts wrapper"><?php the_title(); ?></h2>
+</div>
+
+<div class="wrapper">
   <div class="container jobz">
 
-    <div class="jobcontent">
+    <div class="newscontent">
 
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-      <h2 class="posts"><?php the_title(); ?></h2>
 
       <?php if ( has_post_thumbnail() ) : ?>
               <?php the_post_thumbnail( 'full' ); ?>

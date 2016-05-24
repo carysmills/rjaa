@@ -31,7 +31,6 @@
         <div class="twitter"><?php the_field('twitter'); ?></div>
       </div>
 
-    <?php get_footer(); ?>
     </section>
 
   <!--   //wordpress this -->
@@ -44,4 +43,6 @@
       <li><a href="<?php the_field('email'); ?>"><i class="fa fa-envelope"></i></a></li>
     </ul>
   </div>
-<!--  -->
+
+  <?php get_footer(); ?>
+  <footer>Developed by <a href="http://www.twitter.com/CarysMills">Carys Mills</a></footer>

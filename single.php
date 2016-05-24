@@ -1,4 +1,4 @@
-  <img class="logohead2" src="<?php the_field('logohead'); ?>" alt="">
+  <img class="logohead2" src="http://carysmills.com/rjaa2/wp-content/uploads/2016/03/logo-1.png" alt="">
 
 
 <?php get_header(); ?>
@@ -12,10 +12,9 @@
     )); ?>
   </nav> 
 
-<div class="main">
+<div class=" wrapper blog">
   <div class="container post">
     <div class="content">
-      <div class="jobcontent">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -42,10 +41,7 @@
 
       <?php endwhile; // end of the loop. ?>
 
-      </div>
     </div> <!-- /.content -->
-
-    <?php get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
