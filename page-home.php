@@ -44,5 +44,6 @@
     </ul>
   </div>
 
-  <?php get_footer(); ?>
-  <footer>Developed by <a href="http://www.twitter.com/CarysMills">Carys Mills</a></footer>
+  <div class="purple">
+     <?php get_footer(); ?>
+  </div>

@@ -1,11 +1,11 @@
-<img class="logohead2" src="<?php the_field('logohead'); ?>" alt="">
+<a href="https://ryersonjournalismalumni.com/"><img class="logohead2" src="<?php the_field('logohead'); ?>" alt=""></a>
 
 <?php get_header();  ?>
 
     <div class="content pagemain">
       <nav>
 
-      <img class="logohead" src="<?php the_field('logohead'); ?>" alt="">
+      <a href="https://ryersonjournalismalumni.com/"><img class="logohead" src="<?php the_field('logohead'); ?>" alt=""></a>
 
         <?php wp_nav_menu( array(
           'container' => false,
@@ -45,7 +45,6 @@
             <?php endwhile; ?>
           <?php endif; ?>
 
-          <?php get_footer(); ?>
       </div>
     </div> <!-- /,content -->
 
@@ -57,3 +56,5 @@
         <li><a href="<?php the_field('email'); ?>"><i class="fa fa-envelope"></i></a></li>
       </ul>
     </div> 
+
+<?php get_footer(); ?>

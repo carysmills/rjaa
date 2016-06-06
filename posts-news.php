@@ -8,14 +8,14 @@
       rgba(14, 14, 82,0.9)
     ),  url('<?php the_field('updates_background'); ?>') no-repeat; background-size: cover;">
 
-  <img class="logohead2 filter" src="<?php the_field('logohead'); ?>" alt="">
+  <a href="https://ryersonjournalismalumni.com/"><img class="logohead2 filter" src="<?php the_field('logohead'); ?>" alt=""></a>
 
 
 <?php  ?>
 <?php get_header(); ?>
 
         <nav>
-        <img class="logohead filter" src="<?php the_field('logohead'); ?>" alt="">
+        <a href="https://ryersonjournalismalumni.com/"><img class="logohead filter" src="<?php the_field('logohead'); ?>" alt=""></a>
 
           <?php wp_nav_menu( array(
             'container' => false,
@@ -49,8 +49,6 @@
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 
-<?php get_footer(); ?>
-
 <div class="social2 clearfix" id="social">
   <ul class="clearfix">
     <li><a target="_blank" href="<?php the_field('fblink'); ?>"><i class="fa fa-facebook"></i></a></li>
@@ -59,3 +57,5 @@
     <li><a href="<?php the_field('email'); ?>"><i class="fa fa-envelope"></i></a></li>
   </ul>
 </div>
+
+<?php get_footer(); ?>

@@ -1,3 +1,5 @@
+ <div class="credit"><a target="_blank" href="http://www.twitter.com/CarysMills">&copy Carys Mills</a></div>
+
 <script>
 /* Google Analytics! */
  var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID
