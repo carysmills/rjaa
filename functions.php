@@ -55,6 +55,15 @@ function hackeryou_scripts() {
   	true //load in footer
   );
 
+  wp_enqueue_script(
+  	'jqueryui',
+  	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js",
+  	array( 'jquery'), //dependencies
+  	null, //version number
+  	true //load in footer
+  );
+
+
    wp_enqueue_script(
     'type', //handle
     get_template_directory_uri() . '/js/typed.js', //source

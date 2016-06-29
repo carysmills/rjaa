@@ -34,7 +34,9 @@
 
               <?php while( have_rows('headlineryear') ): the_row();?> 
 
-              <h3 class="year clearfix"> <?php the_sub_field('year') ?></h3>
+              <h3 class="year"> <?php the_sub_field('year') ?><i class="fa fa-chevron-down drop"></i></h3>
+
+              <div class="yearBlock"> 
 
               <?php 
               if( have_rows('headlinersofyear') ): ?>
@@ -47,12 +49,14 @@
                    </div>
 
               <?php endwhile; ?>
+              </div>
             <?php endif; ?>
 
             <?php endwhile; ?>
           <?php endif; ?>
 
      <?php endwhile; // end the loop?>
+     </div>
 
       </div>
     </div> <!-- /,content -->

@@ -24,3 +24,38 @@ $( "#nav-toggle" ).click(function() {
   $(this).toggleClass( "active" );
   $( "#mobile" ).toggleClass( "show" );
 });
+
+
+$(".year").on( "click", function( event ) {
+	if ($(this).next().hasClass("flex")) {
+		$(this).next().addClass("none");
+		$(this).next().removeClass("flex");
+		$(this).addClass("hide");
+		$(this).removeClass("show");
+		$(this).find('i').toggleClass('fa-chevron-up fa-chevron-down');
+	}
+
+	else if ($(this).next().hasClass("none")) {
+		$(this).next().addClass("flex");
+		$(this).next().removeClass("none");
+		$(this).addClass("show");
+		$(this).find('i').toggleClass('fa-chevron-down fa-chevron-up')
+
+
+	}
+	else {
+		$(this).next().addClass("flex");
+		$(this).addClass("show");
+		$(this).removeClass("hide");
+		$(this).find('i').toggleClass('fa-chevron-down fa-chevron-up')
+
+		// $(this).find('i').removeClass('fa-chevron-up');
+		// $(this).find('i').addClass('fa-chevron-down');
+	}
+});
+
+$( document ).ready(function() {
+    $(".yearBlock:first-of-type").addClass("flex")
+    $(".drop").first().removeClass("fa-chevron-down")
+    $(".drop").first().addClass("fa-chevron-up")
+});
