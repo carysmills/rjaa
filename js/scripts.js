@@ -1,4 +1,3 @@
-
 $(window).scroll(function() {
 	if ($("#social").hasClass("home")) {
 
@@ -48,9 +47,6 @@ $(".year").on( "click", function( event ) {
 		$(this).addClass("show");
 		$(this).removeClass("hide");
 		$(this).find('i').toggleClass('fa-chevron-down fa-chevron-up')
-
-		// $(this).find('i').removeClass('fa-chevron-up');
-		// $(this).find('i').addClass('fa-chevron-down');
 	}
 });
 

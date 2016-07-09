@@ -2,52 +2,56 @@
 	Template Name: News
 */ -->
 
-<div class="updatesHeader" 
-        style="background: linear-gradient(
-      rgba(14, 14, 82, 0.7), 
-      rgba(14, 14, 82,0.9)
-    ),  url('<?php the_field('updates_background'); ?>') no-repeat; background-size: cover;">
+<div class="blogcontainer">
 
-  <a href="https://ryersonjournalismalumni.com/"><img class="logohead2 filter" src="<?php the_field('logohead'); ?>" alt=""></a>
+  <div class="updatesHeader" 
+          style="background: linear-gradient(
+        rgba(14, 14, 82, 0.7), 
+        rgba(14, 14, 82,0.9)
+      ),  url('<?php the_field('updates_background'); ?>') no-repeat; background-size: cover;">
+
+    <a href="https://ryersonjournalismalumni.com/"><img class="logohead2 filter" src="<?php the_field('logohead'); ?>" alt=""></a>
 
 
-<?php  ?>
-<?php get_header(); ?>
+  <?php  ?>
+  <?php get_header(); ?>
 
-        <nav>
-        <a href="https://ryersonjournalismalumni.com/"><img class="logohead filter" src="<?php the_field('logohead'); ?>" alt=""></a>
+          <nav>
+          <a href="https://ryersonjournalismalumni.com/"><img class="logohead filter" src="<?php the_field('logohead'); ?>" alt=""></a>
 
-          <?php wp_nav_menu( array(
-            'container' => false,
-            'theme_location' => 'primary'
-          )); ?>
-        </nav> 
+            <?php wp_nav_menu( array(
+              'container' => false,
+              'theme_location' => 'primary'
+            )); ?>
+          </nav> 
 
-      <h2 class="posts wrapper"><?php the_title(); ?></h2>
+        <h2 class="posts wrapper"><?php the_title(); ?></h2>
+  </div>
+
+  <div class="wrapper">
+    <div class="container jobz">
+
+      <div class="newscontent">
+
+      <?php // Start the loop ?>
+      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
+        <?php if ( has_post_thumbnail() ) : ?>
+                <?php the_post_thumbnail( 'full' ); ?>
+        <?php endif; ?>
+
+        <?php the_content(); ?>
+
+      <?php endwhile; // end the loop?>
+      </div> <!--/.content -->
+
+
+  <?php get_sidebar(); ?>
+
+    </div> <!-- /.container -->
+  </div> <!-- /.main -->
+
 </div>
-
-<div class="wrapper">
-  <div class="container jobz">
-
-    <div class="newscontent">
-
-    <?php // Start the loop ?>
-    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-      <?php if ( has_post_thumbnail() ) : ?>
-              <?php the_post_thumbnail( 'full' ); ?>
-      <?php endif; ?>
-
-      <?php the_content(); ?>
-
-    <?php endwhile; // end the loop?>
-    </div> <!--/.content -->
-
-
-<?php get_sidebar(); ?>
-
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
 
 <div class="social2 clearfix" id="social">
   <ul class="clearfix">

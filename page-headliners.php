@@ -69,4 +69,5 @@
         <li><a href="<?php the_field('email'); ?>"><i class="fa fa-envelope"></i></a></li>
       </ul>
     </div>
+
  <?php get_footer(); ?>

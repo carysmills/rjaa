@@ -1,5 +1,5 @@
-  <img class="logohead2" src="http://carysmills.com/rjaa2/wp-content/uploads/2016/03/logo-1.png" alt="">
-
+<!--   <img class="logohead2" src="http://carysmills.com/rjaa2/wp-content/uploads/2016/03/logo-1.png" alt="">
+ -->
 
 <?php get_header(); ?>
 
